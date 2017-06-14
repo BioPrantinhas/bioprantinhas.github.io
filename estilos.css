@@ -1,0 +1,151 @@
+html {
+    width: 100%;
+    position: relative;
+}
+header {
+    background-image: linear-gradient(to top, #0370E8, #03A0F4);
+    height: 140px;
+    font-family: "Calibri", "OpenSans";
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+header img[src*="splash"] {
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+article:hover > body {
+    background-color: black;
+}
+article {
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    font-family: "Calibri", "OpenSans";
+    text-align: left;
+    color: gray;
+    border: solid lightgray 1px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    width: 60%;
+    transition: 100ms ease-in-out;
+    clear: both;
+}
+article:hover {
+    border-color: #40bbfd;
+    border-radius: 15px;
+    cursor: default;
+}
+article ::selection {
+    background-color: #03A0F4;
+    color: white;
+}
+article h2 {
+    margin-top: 0px;
+}
+article img {
+    display: inline-block;
+    width: 40%;
+    border-radius: 10%;
+    box-sizing: border-box;
+    align-content: stretch;
+}
+.pcont {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+article p {
+    margin: 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+article h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+time {
+    font-size: 12px;
+    margin-top: 30px;
+    color: lightgray;
+}
+main {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+article:nth-of-type(odd) {
+
+}
+article:nth-of-type(even) {
+    margin-left: 40%;
+}
+article:nth-of-type(1) {
+    top: 0;
+}
+footer {
+    background-image: linear-gradient(to top, #0370E8, #03A0F4);
+    position: relative;
+    height: 50px;
+    bottom: 0px;
+    color: white;
+    font-family: "Calibri", "OpenSans";
+    clear: both;
+    margin-top: 25px;
+    padding: 12px;
+}
+footer > p {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    margin: 0;
+}
+footer img {
+    height: 50px;
+    float: right;
+}
+#title {
+}
+#subtitle {
+    font-size: 15px;
+}
+header:hover {
+    cursor: default;
+}
+header img[src*="hamtaro"] {
+    float: right;
+    margin: 20px;
+    opacity: 0.9;
+    transition: 100ms ease-in-out;
+}
+header img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+img[src*="to top"] {
+    width: 50px;
+    position: sticky;
+    bottom: 25px;
+    left: 95%;
+    opacity: 0.8;
+    transition: 50ms ease-in-out;
+}
+img[src*="to top"]:hover {
+    opacity: 1;
+}
