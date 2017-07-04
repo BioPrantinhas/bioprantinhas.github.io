@@ -175,6 +175,24 @@ section h2 {
     margin-bottom: 20px;
 }
 
+section h2:not(:nth-child(1)) {
+    margin-top: 70px;
+}
+
+section h3 {
+    font-size: 23px;
+}
+
+section h3:not(:nth-child(1)) {
+    margin-top: 60px;
+}
+
+.profile {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
 .pcont {
     display: inline-block;
     width: 54%;
@@ -183,7 +201,7 @@ section h2 {
     vertical-align: top;
 }
 
-.pcont img {
+.pcont img:not(.profile) {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 80%;
