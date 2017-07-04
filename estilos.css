@@ -83,7 +83,24 @@ main {
 
 a {
     text-decoration: none;
+    position: relative;
  }
+
+section a:link {
+    color: #a8e2ff;
+}
+
+section a:visited {
+    color: #47acfe;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+section a:active {
+    top: 2px;
+}
 
 section {
     margin-top: 50px;
@@ -117,10 +134,14 @@ section h2 {
     position: relative;
 }
 
-section img[src*="jpg"] {
+.imgcont img[src*="jpg"] {
     align-content: stretch;
     border-radius: 5%;
     width: 100%;
+}
+
+#arrowcont {
+    position: relative;
 }
 
 img[src*="arrow"] {
@@ -162,6 +183,15 @@ section h2 {
     vertical-align: top;
 }
 
+.pcont img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 img[src*="to top"] {
     width: 50px;
     position: sticky;
@@ -180,6 +210,13 @@ time {
     margin-top: 30px;
     color: lightgray;
     cursor: default;
+}
+
+iframe {
+    width: 500px;
+    height: 281px;
+    border: 0px;
+    margin-top: 60px;
 }
 
 footer {
