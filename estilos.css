@@ -155,12 +155,12 @@ img[src*="to top"] {
     position: sticky;
     bottom: 25px;
     left: 95%;
-    opacity: 0.5;
-    transition: 200ms ease-in-out;
+    opacity: 0.75;
+    transition: 100ms ease-in-out;
 }
 
 img[src*="to top"]:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 time {
