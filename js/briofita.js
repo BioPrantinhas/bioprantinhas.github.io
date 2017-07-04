@@ -2,14 +2,11 @@
 // Este arquivo ainda não está incluído no arquivo HTML
 
 // caminho para onde as imagens estão hospedadas
-const servidorDasImagens = 'https://fegemo.github.io/cefet-web/images/',
-  // array com o nome das 5 imagens da galeria
+const LocalImagens = '/imgs/briofita',
+  // array com o nome das 2 imagens da galeria
   nomesDasImagens = [
-    'philae-parts.jpg',
-    'philae-rosetta.jpg',
-    'philae-separation.jpg',
-    'philae-67-picture.jpg',
-    'philae-collecting.jpg'
+    'briofita1.jpg',
+    'briofita2.jpg',
   ];
 
 // o índice da imagem sendo mostrada
@@ -24,15 +21,15 @@ let antEl = document.querySelector('#anterior');
 antEl.addEventListener('click', function(e) {
   indiceDaFotoCorrente--;
   if(indiceDaFotoCorrente < 0) {
-    indiceDaFotoCorrente = 4;
+    indiceDaFotoCorrente = 1;
   }
-  imgSlideEl.src = servidorDasImagens + nomesDasImagens[indiceDaFotoCorrente];
+  imgSlideEl.src = LocalImagens + nomesDasImagens[indiceDaFotoCorrente];
 });
 
 proxEl.addEventListener('click', function(e) {
   indiceDaFotoCorrente++;
-  if(indiceDaFotoCorrente > 4) {
+  if(indiceDaFotoCorrente > 1) {
     indiceDaFotoCorrente = 0;
   }
-  imgSlideEl.src = servidorDasImagens + nomesDasImagens[indiceDaFotoCorrente];
+  imgSlideEl.src = LocalImagens + nomesDasImagens[indiceDaFotoCorrente];
 });
