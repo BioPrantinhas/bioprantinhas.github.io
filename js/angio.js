@@ -2,7 +2,7 @@
 // Este arquivo ainda não está incluído no arquivo HTML
 
 // caminho para onde as imagens estão hospedadas
-const LocalImagens = '../imgs/angio',
+const LocalImagens = '../imgs/',
   // array com o nome das 2 imagens da galeria
   nomesDasImagens = [
     'angio1.jpg',
